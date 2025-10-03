@@ -259,6 +259,413 @@
             color: #e5e5e5;
         }
 
+        .sources-section {
+            padding-left: 44px;
+            margin-top: 20px;
+            margin-bottom: 16px;
+        }
+
+        .sources-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .sources-title {
+            font-size: 13px;
+            color: #888;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sources-count {
+            font-size: 12px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .sources-scroll {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+            scroll-behavior: smooth;
+        }
+
+        .sources-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .sources-scroll::-webkit-scrollbar-track {
+            background: #1a1a1a;
+            border-radius: 3px;
+        }
+
+        .sources-scroll::-webkit-scrollbar-thumb {
+            background: #2a2a2a;
+            border-radius: 3px;
+        }
+
+        .source-card {
+            min-width: 280px;
+            max-width: 280px;
+            background: #171717;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .source-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+        }
+
+        .source-image-container {
+            width: 100%;
+            height: 140px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .source-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .source-card:hover .source-image {
+            transform: scale(1.05);
+        }
+
+        .source-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            opacity: 0.3;
+        }
+
+        .source-index-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 24px;
+            height: 24px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #6366f1;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .source-content {
+            padding: 12px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .source-header {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+
+        .source-favicon {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        .source-domain {
+            font-size: 11px;
+            color: #6366f1;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .source-title {
+            font-size: 13px;
+            color: #e5e5e5;
+            font-weight: 500;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .source-description {
+            font-size: 12px;
+            color: #888;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .source-url {
+            font-size: 11px;
+            color: #555;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-top: auto;
+            padding-top: 8px;
+            border-top: 1px solid #222;
+        }
+
+        .citation {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 5px;
+            background: #2a2a2a;
+            color: #6366f1;
+            font-size: 11px;
+            font-weight: 600;
+            border-radius: 4px;
+            margin: 0 2px;
+            cursor: pointer;
+            transition: all 0.2s;
+            vertical-align: middle;
+        }
+
+        .citation:hover {
+            background: #6366f1;
+            color: white;
+        }
+
+        /* Quiz Styles */
+        .quiz-section {
+            padding-left: 44px;
+            margin-top: 24px;
+        }
+
+        .quiz-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            padding: 16px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border-radius: 12px;
+        }
+
+        .quiz-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .quiz-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .quiz-loading {
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .quiz-question {
+            background: #171717;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: all 0.3s;
+        }
+
+        .quiz-question.answered {
+            opacity: 0.7;
+        }
+
+        .question-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .question-number {
+            min-width: 32px;
+            height: 32px;
+            background: #6366f1;
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .question-text {
+            flex: 1;
+            color: #e5e5e5;
+            font-size: 14px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .quiz-choices {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .quiz-choice {
+            padding: 14px 16px;
+            background: #1a1a1a;
+            border: 2px solid #2a2a2a;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            color: #e5e5e5;
+        }
+
+        .quiz-choice:hover:not(.correct):not(.incorrect) {
+            border-color: #6366f1;
+            background: #222;
+            transform: translateX(4px);
+        }
+
+        .quiz-choice.selected {
+            border-color: #6366f1;
+            background: #1e1b4b;
+        }
+
+        .quiz-choice.correct {
+            border-color: #10b981;
+            background: #064e3b;
+            cursor: default;
+        }
+
+        .quiz-choice.incorrect {
+            border-color: #ef4444;
+            background: #7f1d1d;
+            cursor: default;
+        }
+
+        .choice-indicator {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #3a3a3a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+            transition: all 0.2s;
+        }
+
+        .quiz-choice:hover .choice-indicator {
+            border-color: #6366f1;
+        }
+
+        .quiz-choice.selected .choice-indicator {
+            border-color: #6366f1;
+            background: #6366f1;
+        }
+
+        .quiz-choice.correct .choice-indicator {
+            border-color: #10b981;
+            background: #10b981;
+        }
+
+        .quiz-choice.incorrect .choice-indicator {
+            border-color: #ef4444;
+            background: #ef4444;
+        }
+
+        .quiz-results {
+            background: #171717;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .quiz-score {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+        }
+
+        .quiz-message {
+            font-size: 16px;
+            color: #e5e5e5;
+            margin-bottom: 8px;
+        }
+
+        .quiz-detail {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .retry-quiz-btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #6366f1;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .retry-quiz-btn:hover {
+            background: #7c3aed;
+            transform: translateY(-2px);
+        }
+
         .message-actions {
             padding-left: 44px;
             margin-top: 12px;
@@ -536,13 +943,14 @@
         const sendButton = document.getElementById('sendButton');
 
         let conversationHistory = [];
+        let currentQuiz = null;
 
         function formatTime() {
             const now = new Date();
             return now.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
         }
 
-        function addMessage(text, isUser) {
+        function addMessage(text, isUser, sources = null, quiz = null) {
             const welcomeScreen = chatMessages.querySelector('.welcome-screen');
             if (welcomeScreen) {
                 welcomeScreen.remove();
@@ -550,6 +958,12 @@
 
             const messageGroup = document.createElement('div');
             messageGroup.className = 'message-group';
+            
+            // Traiter les citations dans le texte
+            let processedText = text;
+            if (!isUser && sources && sources.length > 0) {
+                processedText = addCitationsToText(text, sources);
+            }
             
             messageGroup.innerHTML = `
                 <div class="message-header">
@@ -559,7 +973,47 @@
                     <div class="message-sender">${isUser ? 'You' : 'NASA Assistant'}</div>
                     <div class="message-time">${formatTime()}</div>
                 </div>
-                <div class="message-content">${escapeHtml(text)}</div>
+                <div class="message-content">${escapeHtml(processedText)}</div>
+                ${!isUser && sources && sources.length > 0 ? `
+                    <div class="sources-section">
+                        <div class="sources-header">
+                            <div class="sources-title">
+                                <span>🔗</span>
+                                <span>Sources</span>
+                            </div>
+                            <span class="sources-count">${sources.length}</span>
+                        </div>
+                        <div class="sources-scroll">
+                            ${sources.map((source, index) => `
+                                <a href="${source.url}" target="_blank" class="source-card" data-source-index="${index + 1}">
+                                    <div class="source-image-container">
+                                        <div class="source-index-badge">${index + 1}</div>
+                                        ${source.image ? `
+                                            <img src="${source.image}" class="source-image" 
+                                                 onerror="this.parentElement.innerHTML='<div class=source-placeholder>🌐</div><div class=source-index-badge>${index + 1}</div>'">
+                                        ` : `
+                                            <div class="source-placeholder">🌐</div>
+                                        `}
+                                    </div>
+                                    <div class="source-content">
+                                        <div class="source-header">
+                                            ${source.favicon ? `<img src="${source.favicon}" class="source-favicon" onerror="this.style.display='none'">` : ''}
+                                            <span class="source-domain">${source.domain || new URL(source.url).hostname}</span>
+                                        </div>
+                                        <div class="source-title">${source.title}</div>
+                                        ${source.description ? `<div class="source-description">${source.description}</div>` : ''}
+                                        <div class="source-url">${source.url}</div>
+                                    </div>
+                                </a>
+                            `).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+                ${!isUser && quiz ? `
+                    <div class="quiz-section" id="quiz-${Date.now()}">
+                        ${renderQuiz(quiz)}
+                    </div>
+                ` : ''}
                 ${!isUser ? `
                     <div class="message-actions">
                         <button class="action-btn" onclick="copyMessage(this)">
@@ -575,9 +1029,212 @@
             `;
             
             chatMessages.appendChild(messageGroup);
+            
+            // Ajouter des événements aux citations
+            if (!isUser && sources && sources.length > 0) {
+                addCitationEvents(messageGroup, sources);
+            }
+
+            // Ajouter les événements du quiz
+            if (!isUser && quiz) {
+                initQuizEvents(messageGroup, quiz);
+            }
+            
             chatMessages.scrollTop = chatMessages.scrollHeight;
             
-            conversationHistory.push({ text, isUser, time: formatTime() });
+            conversationHistory.push({ text, isUser, sources, quiz, time: formatTime() });
+        }
+
+        function renderQuiz(quiz) {
+            if (!quiz || !quiz.questions) {
+                return '<div class="quiz-loading">Génération du quiz...</div>';
+            }
+
+            return `
+                <div class="quiz-header">
+                    <div class="quiz-title">
+                        <span>🎯</span>
+                        <span>Testez vos connaissances</span>
+                    </div>
+                    <div class="quiz-badge">${quiz.questions.length} questions</div>
+                </div>
+                <div class="quiz-questions">
+                    ${quiz.questions.map((q, index) => `
+                        <div class="quiz-question" data-question-index="${index}">
+                            <div class="question-header">
+                                <div class="question-number">${index + 1}</div>
+                                <div class="question-text">${q.question}</div>
+                            </div>
+                            <div class="quiz-choices">
+                                ${q.choix.map((choix, choixIndex) => `
+                                    <div class="quiz-choice" data-choice="${choix}" data-question="${index}">
+                                        <div class="choice-indicator"></div>
+                                        <span>${choix}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="quiz-results" style="display: none;">
+                    <div class="quiz-score"></div>
+                    <div class="quiz-message"></div>
+                    <div class="quiz-detail"></div>
+                </div>
+            `;
+        }
+
+        function initQuizEvents(messageGroup, quiz) {
+            const choices = messageGroup.querySelectorAll('.quiz-choice');
+            const userAnswers = {};
+            
+            choices.forEach(choice => {
+                choice.addEventListener('click', function() {
+                    const questionIndex = parseInt(this.dataset.question);
+                    const selectedChoice = this.dataset.choice;
+                    const question = messageGroup.querySelector(`.quiz-question[data-question-index="${questionIndex}"]`);
+                    
+                    // Désélectionner les autres choix de cette question
+                    const otherChoices = question.querySelectorAll('.quiz-choice');
+                    otherChoices.forEach(c => {
+                        c.classList.remove('selected', 'correct', 'incorrect');
+                    });
+                    
+                    // Sélectionner ce choix
+                    this.classList.add('selected');
+                    userAnswers[questionIndex] = selectedChoice;
+                    
+                    // Afficher la bonne réponse
+                    const correctAnswer = quiz.questions[questionIndex].bonne_reponse;
+                    otherChoices.forEach(c => {
+                        if (c.dataset.choice === correctAnswer) {
+                            c.classList.add('correct');
+                            c.querySelector('.choice-indicator').innerHTML = '✓';
+                        } else if (c.classList.contains('selected')) {
+                            c.classList.add('incorrect');
+                            c.querySelector('.choice-indicator').innerHTML = '✗';
+                        }
+                    });
+                    
+                    question.classList.add('answered');
+                    
+                    // Vérifier si toutes les questions sont répondues
+                    if (Object.keys(userAnswers).length === quiz.questions.length) {
+                        showQuizResults(messageGroup, quiz, userAnswers);
+                    }
+                });
+            });
+        }
+
+        function showQuizResults(messageGroup, quiz, userAnswers) {
+            let correctCount = 0;
+            quiz.questions.forEach((q, index) => {
+                if (userAnswers[index] === q.bonne_reponse) {
+                    correctCount++;
+                }
+            });
+            
+            const percentage = Math.round((correctCount / quiz.questions.length) * 100);
+            const resultsDiv = messageGroup.querySelector('.quiz-results');
+            const questionsDiv = messageGroup.querySelector('.quiz-questions');
+            
+            setTimeout(() => {
+                questionsDiv.style.display = 'none';
+                resultsDiv.style.display = 'block';
+                
+                resultsDiv.querySelector('.quiz-score').textContent = `${correctCount}/${quiz.questions.length}`;
+                
+                let message = '';
+                if (percentage === 100) {
+                    message = '🎉 Parfait ! Vous maîtrisez le sujet !';
+                } else if (percentage >= 80) {
+                    message = '🌟 Excellent travail !';
+                } else if (percentage >= 60) {
+                    message = '👍 Bon score !';
+                } else {
+                    message = '📚 Continuez à apprendre !';
+                }
+                
+                resultsDiv.querySelector('.quiz-message').textContent = message;
+                resultsDiv.querySelector('.quiz-detail').textContent = `Vous avez obtenu ${percentage}% de bonnes réponses`;
+                
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 800);
+        }
+
+        function addCitationsToText(text, sources) {
+            // Chercher des patterns comme [1], [2], etc. et les remplacer par des citations cliquables
+            return text.replace(/\[(\d+)\]/g, (match, num) => {
+                const index = parseInt(num);
+                if (index > 0 && index <= sources.length) {
+                    return `<span class="citation" data-source="${index}">${index}</span>`;
+                }
+                return match;
+            });
+        }
+
+        function addCitationEvents(messageGroup, sources) {
+            const citations = messageGroup.querySelectorAll('.citation');
+            citations.forEach(citation => {
+                citation.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const sourceIndex = parseInt(citation.dataset.source);
+                    const sourceCard = messageGroup.querySelector(`.source-card[data-source-index="${sourceIndex}"]`);
+                    if (sourceCard) {
+                        sourceCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        sourceCard.style.background = '#6366f1';
+                        sourceCard.style.borderColor = '#6366f1';
+                        setTimeout(() => {
+                            sourceCard.style.background = '#171717';
+                            sourceCard.style.borderColor = '#2a2a2a';
+                        }, 1000);
+                    }
+                });
+            });
+        }
+
+        function extractSourcesFromResponse(response) {
+            // Essayer de détecter des URLs dans la réponse
+            const urlRegex = /(https?:\/\/[^\s]+)/g;
+            const urls = response.match(urlRegex) || [];
+            
+            if (urls.length === 0) {
+                // Sources par défaut pour la NASA si aucune URL détectée
+                return [
+                    {
+                        title: "NASA Official Website",
+                        url: "https://www.nasa.gov",
+                        domain: "nasa.gov",
+                        favicon: "https://www.nasa.gov/favicon.ico",
+                        image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=400&h=200&fit=crop",
+                        description: "Explore NASA's official website for the latest space news and discoveries"
+                    },
+                    {
+                        title: "NASA Science",
+                        url: "https://science.nasa.gov",
+                        domain: "science.nasa.gov",
+                        favicon: "https://www.nasa.gov/favicon.ico",
+                        image: "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=200&fit=crop",
+                        description: "NASA's science missions and research"
+                    }
+                ];
+            }
+            
+            return urls.slice(0, 6).map((url, index) => {
+                try {
+                    const urlObj = new URL(url);
+                    return {
+                        title: `${urlObj.hostname.replace('www.', '')} - Source ${index + 1}`,
+                        url: url,
+                        domain: urlObj.hostname.replace('www.', ''),
+                        favicon: `https://www.google.com/s2/favicons?domain=${urlObj.hostname}&sz=32`,
+                        image: `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`,
+                        description: ""
+                    };
+                } catch (e) {
+                    return null;
+                }
+            }).filter(Boolean);
         }
 
         function showTyping() {
@@ -629,6 +1286,7 @@
             if (!message) return;
 
             addMessage(message, true);
+            const userMessage = message;
             chatInput.value = '';
             chatInput.style.height = 'auto';
             sendButton.disabled = true;
@@ -653,15 +1311,28 @@
                 
                 // Essayer de parser en JSON
                 let botResponse;
+                let sources = null;
+                
                 try {
                     const data = JSON.parse(textResponse);
                     botResponse = data.response || data.message || data.output || data.text || JSON.stringify(data);
+                    sources = data.sources || null;
                 } catch (jsonError) {
                     // Si ce n'est pas du JSON, utiliser le texte brut
                     botResponse = textResponse || 'No response received';
                 }
                 
-                addMessage(botResponse, false);
+                // Extraire les sources si elles ne sont pas fournies
+                if (!sources) {
+                    sources = extractSourcesFromResponse(botResponse);
+                }
+                
+                // Afficher le message sans le quiz d'abord
+                addMessage(botResponse, false, sources);
+                
+                // Générer le quiz en arrière-plan
+                generateQuiz(userMessage, botResponse);
+                
             } catch (error) {
                 hideTyping();
                 addMessage(`Sorry, an error occurred: ${error.message}`, false);
@@ -669,6 +1340,60 @@
             } finally {
                 sendButton.disabled = false;
                 chatInput.focus();
+            }
+        }
+
+        async function generateQuiz(question, responseText) {
+            try {
+                // Afficher le quiz en mode chargement
+                const lastMessage = chatMessages.lastElementChild;
+                const quizSection = document.createElement('div');
+                quizSection.className = 'quiz-section';
+                quizSection.innerHTML = `
+                    <div class="quiz-header">
+                        <div class="quiz-title">
+                            <span>🎯</span>
+                            <span>Génération du quiz...</span>
+                        </div>
+                    </div>
+                    <div class="quiz-loading">⏳ Création de questions pour tester vos connaissances...</div>
+                `;
+                lastMessage.querySelector('.message-actions').before(quizSection);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+
+                const quizResponse = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        question: question,
+                        texte: responseText
+                    })
+                });
+
+                if (!quizResponse.ok) {
+                    throw new Error(`Quiz generation failed: ${quizResponse.status}`);
+                }
+
+                const quizData = await quizResponse.json();
+                
+                // Remplacer le quiz de chargement par le quiz réel
+                if (quizData && quizData.questions) {
+                    quizSection.innerHTML = renderQuiz(quizData);
+                    initQuizEvents(lastMessage, quizData);
+                } else {
+                    quizSection.remove();
+                }
+                
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            } catch (error) {
+                console.error('Quiz generation error:', error);
+                // Supprimer la section quiz en cas d'erreur
+                const quizSection = chatMessages.lastElementChild.querySelector('.quiz-section');
+                if (quizSection) {
+                    quizSection.remove();
+                }
             }
         }
 
